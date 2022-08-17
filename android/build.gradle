@@ -1,0 +1,36 @@
+apply plugin: 'com.android.library'
+android {
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
+
+    defaultConfig {
+        minSdkVersion 17
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        ndk {
+            abiFilters 'armeabi-v7a','x86_64','arm64-v8a','x86'
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+repositories {
+    maven {
+        url "https://mvnrepository.com/artifact/org.videolan.android"
+    }
+    google()
+    jcenter()
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "com.facebook.react:react-native:+"
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'org.videolan.android:libvlc-all:3.1.12'
+}
