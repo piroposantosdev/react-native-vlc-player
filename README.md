@@ -3,12 +3,7 @@
 
 
 ## New feature requests and bug fixes 
-OBS.: Material Icons Font not included... you must add it by yourself in your project
-
-At the moment I am a bit tied up with other work. As a matter of fact, I don't get much time to develop at all nowadays. But I am more than open to help anyone who wants's to contribute to this repo. And I will be sure to merge any fixes as soon as PR's come up. But if you need someone to fix issues that affect you till I get back to this(ETA Q3 2022), One option is to add a bounty to the following site https://www.bountysource.com/ someone will attend to it.
-
-
-
+OBS.: Material Icons Font not included... you must add it by yourself in your project. You must disable bitcode from your project build settings to work.
 
 ## Supported RN Versions
 
