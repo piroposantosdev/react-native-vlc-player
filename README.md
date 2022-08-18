@@ -24,15 +24,15 @@ Play MKV, multiple audio tracks (including 5.1), and subtitles tracks (including
 
 Run
 
-`npm i react-native-vlc-media-player --save`
+`npm i https://github.com/piroposantosdev/react-native-vlc-player.git --save`
 
 or
 
-`yarn add react-native-vlc-media-player`
+`yarn add https://github.com/piroposantosdev/react-native-vlc-player.git
 
 
 Run 
-
+[Deprecated]
 `react-native link react-native-vlc-media-player`
 
 ## android
