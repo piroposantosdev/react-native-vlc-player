@@ -28,7 +28,7 @@ Run
 
 or
 
-`yarn add https://github.com/piroposantosdev/react-native-vlc-player.git
+`yarn add https://github.com/piroposantosdev/react-native-vlc-player.git`
 
 
 Run 
