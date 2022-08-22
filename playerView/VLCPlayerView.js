@@ -103,7 +103,8 @@ export default class VLCPlayerView extends Component {
       showLeftButton,
       showMiddleButton,
       showRightButton,
-      errorTitle
+      errorTitle,
+      paused
     } = this.props;
     let { isLoading, loadingSuccess, showControls, isError } = this.state;
     let showGG = false;
@@ -150,7 +151,7 @@ export default class VLCPlayerView extends Component {
         }}>
         <VLCPlayer
           ref={ref => (this.vlcPlayer = ref)}
-          paused={this.state.paused}
+          paused={paused}
           //seek={this.state.seek}
           style={[styles.video]}
           source={source}
