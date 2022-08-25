@@ -37,7 +37,30 @@ Run
 
 ## android
 
-Should work without any specific settings
+Maybe you will found an error when try to build for Android, something like this "2 files found with path 'lib/arm64-v8a/libc++_shared.so' from inputs...-react native...
+To solve this problem, follow this steps...
+1 - Go to android/app/build.gradle file...
+2 - Add this to android{ ... }
+
+`android {
+    packagingOptions {
+
+        pickFirst 'lib/x86/libc++_shared.so'
+
+        pickFirst 'lib/arm64-v8a/libc++_shared.so'
+
+        pickFirst 'lib/x86_64/libc++_shared.so'
+
+        pickFirst 'lib/armeabi-v7a/libc++_shared.so'
+    }
+}`
+
+3 - Add this to defaultConfig { ... }
+`defaultConfig {
+    ...
+    multiDexEnabled true //Add this line
+}`
+4 - Save and try to build now
 
 ## iOS
 
